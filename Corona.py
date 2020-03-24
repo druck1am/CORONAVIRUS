@@ -21,7 +21,7 @@ def send_email():
     cases = Get_Cases()
     server = smtplib.SMTP ('smtp.gmail.com', 587)
     server.starttls()
-    server.login('druck1am@gmail.com', 'Poker123!')
+    server.login('druck1am@gmail.com', 'Password')
 
     #EMAIL
     recip = 'kmr24@pct.edu', 'druck1am@gmail.com', 'dallas.oliver91@gmail.com'
