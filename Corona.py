@@ -16,10 +16,6 @@ def Get_Cases():
     data = soup.find('div', {'class': '2019coronavirus-summary'})
     split_data = list(data.stripped_strings)
 
-
-
-
-
     return split_data
 
 
@@ -27,7 +23,7 @@ def send_email():
     server = smtplib.SMTP ('smtp.gmail.com', 587)
 
     server.starttls()
-    server.login('druck1am@gmail.com', 'Poker123!')
+    server.login('druck1am@gmail.com', 'Password')
 
     #EMAIL
     recip = 'kmr24@pct.edu', 'druck1am@gmail.com', 'monikadestiny08@gmail.com', 'ryanhadlock1002@gmail.com'
